@@ -2,23 +2,33 @@
 public class Driver {
 
 	public static void main(String[] args) {
-		Automobile myAuto1 = new Automobile("Ford", "Orlando", "Florida");
-		System.out.println(myAuto1);
+		//Person per1 = new Person("Bob", "Florida", 21);
 
-		Automobile myAuto2 = new Automobile("Toyota", "Houston", "Texas");
-		System.out.println(myAuto2);
+		Student stud1 = new Student("Bob", "Florida", 21, "Chemistry", "Freshman");
+		System.out.println(stud1);
+		stud1.TimeSpentToGraduateCollege();
 
-		Automobile myAuto3 = new Automobile("Lexus", "New York", "New York");
-		System.out.println(myAuto3);
+		System.out.println("\n");
 
-		RaceCar myCar1 = new RaceCar("Lincoln", "Las Vegas", "Nevada", "Navigator", 2019, "Red");
-		System.out.println(myCar1);
+		System.out.println("Polymorphism");
+		stud1.ClassNumber();
+		stud1.ClassesTaken();
+		stud1.ClassesNeededToFinish();
 
-		RaceCar myCar2 = new RaceCar("Ford", "Los Angeles", "California", "Focus", 2017, "White");
-		System.out.println(myCar2);
+		System.out.println("\n");
 
-		RaceCar myCar3 = new RaceCar("Ford", "Lordstown", "Ohio", "Fiesta", 2015, "Purple");
-		System.out.println(myCar3);
+		Person pers1;
+		pers1 = stud1;
+		pers1.TimeSpentToGraduateCollege();
+
+		System.out.println("\n");
+
+		IMovable iMo;
+		iMo = stud1;
+		iMo.ClassNumber();
+		iMo.ClassesTaken();
+		iMo.ClassesNeededToFinish();
+
 	}
 
 }
