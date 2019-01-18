@@ -1,0 +1,33 @@
+UML for the Name class
+    Class
+        Name
+    Field/Property area
+        - firstName:String
+        - middleName:String
+        - lastName:String
+    Method area
+        + getFirstName():String
+        + setFirstName(String):void
+        + getMiddleName():String
+        + getMiddleName(String):void
+        + getLastName():String
+        + getLastName(String):void
+
+UML for the Person class
+    Class
+        Person
+    Field/Property area
+        - name:Name
+        - gender:String
+        - age:int
+        - salary:double
+    Method area
+        + getName():String
+        + setName(Name):void
+        + getGender():String
+        + setGender(String):void
+        + getAge():int
+        + setAge(int):void
+        + getSalary():double
+        + setSalary(double):void
+
