@@ -1,0 +1,30 @@
+UML for the Automobile class
+	Class
+		Automobile
+	Field/Property area
+		- brand:String
+		- city:String
+		- state:String
+	Method area
+		+ getBrand():String
+		+ setBrand(String):void
+		+ getCity():String
+		+ setCity(String):void
+		+ getState():String
+		+ setState(String):void
+
+
+UML for the RaceCar class
+	Class
+		RaceCar extends Automobile
+	Field/Property area
+		- name:String
+		- year:int
+		- color:String
+	Method area
+		+ getName():String
+		+ setName(String):void
+		+ getYear():int
+		+ setYear(int):void
+		+ getColor():String
+		+ setColor(String):void
